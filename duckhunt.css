@@ -31,3 +31,10 @@ image-rendering: optimizeSpeed;
   padding-right:5vw;
   padding-top:5vh;
 }
+
+.masquage{
+display:none;
+}
+.visible{
+ display:block;
+}
