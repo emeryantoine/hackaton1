@@ -2,7 +2,7 @@ body,
 html {
   height: 100vh;
   margin: 0;
-  background-image: url(images/backgroundMoutain.webp);
+  background-image: url('https://cdn.dribbble.com/users/1016207/screenshots/3029548/untitled-2.jpg?compress=1&resize=400x300');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -16,7 +16,7 @@ image-rendering: optimizeSpeed;
 }
 
 .start{
-  font-size: 25vh;
+  font-size: 10vh;
   border-width:5px;
   border-style: ridge;
   padding-bottom: 0.5em;
@@ -37,4 +37,30 @@ display:none;
 }
 .visible{
  display:block;
+}
+
+
+.duck {
+    position: absolute;
+    right: -200px;
+    z-index: 2;
+    width: 88px;
+    height: 100px;
+    background: url('./images/duck.png');
+    /* background: url('https://cdn.discordapp.com/attachments/843749870133313568/843838771903332352/duck-removebg-preview.png'); */
+    transform: scale(1);
+    animation: walk 1s 0s infinite steps(1), walkFrom 14s 0s 1 linear;
+    cursor: all-scroll;
+}
+
+@keyframes walk {
+    100% {
+        background-position-x: -1800px;
+    }
+}
+
+@keyframes walkFrom {
+    100% {
+        right: 100%;
+    }
 }
